@@ -1,0 +1,42 @@
+.dropper-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.dropper-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.color-picker {
+  border-radius: 50%;
+  width: 30px;
+  cursor: pointer;
+  background-color: #87b0f3;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.color-picker.active {
+  background-color: #5a82bf;
+}
+
+.canvas {
+  cursor: crosshair;
+}
+
+:root {
+  --selected-color: #333;
+}
+
+.selected-color {
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--selected-color);
+}
+
